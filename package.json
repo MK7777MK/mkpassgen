@@ -1,5 +1,5 @@
 {
-	"name": "passgen",
+	"name": "mkpassgen",
 	"version": "1.0.0",
 	"description": "NodeJS Password Generator",
 	"main": "index.js",
@@ -14,14 +14,14 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/MK7777MK/passgen.git"
+		"url": "git+https://github.com/MK7777MK/mkpassgen.git"
 	},
 	"author": "Mohamad Kharsa",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/MK7777MK/passgen/issues"
+		"url": "https://github.com/MK7777MK/mkpassgen/issues"
 	},
-	"homepage": "https://github.com/MK7777MK/passgen#readme",
+	"homepage": "https://github.com/MK7777MK/mkpassgen#readme",
 	"dependencies": {
 		"chalk": "^4.1.1",
 		"clipboardy": "^2.3.0",
