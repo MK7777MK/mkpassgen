@@ -2,7 +2,9 @@
 NodeJS Password Generator
 
 Installing:
-> npm i mkpassgen
+```
+npm i mkpassgen
+```
 
 Running mkpassgen:
 > npx mkpassgen
@@ -14,7 +16,7 @@ Running mkpassgen:
 > npx mkpassgen -l 10
 
 _or_
->npx mkpassgen --length=10
+npx mkpassgen --length=10
 
 ```
 Options:
