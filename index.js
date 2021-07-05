@@ -10,20 +10,24 @@ program.version("1.0.0").description("NodeJS Password Generator");
 program
     .option("-l, --length <length>", "Length of Password", "8")
     .option("-s, --save", "Save Password to password.txt")
+    .option("-c, --copy", "Copy Password to Clipboard")
     .option("-nn, --no-numbers", "No Numbers are Included")
     .option("-ns, --no-symbols", "No Symbols are Included")
     .parse();
 
-const { length, save, numbers, symbols } = program.opts();
+const { length, save, copy, numbers, symbols } = program.opts();
 
 // Generate Password
 const generatedPassword = createPassword(length, numbers, symbols);
 
+// Output Password
+log(`${cyan("Password:")} ${bold(generatedPassword)}`);
+
 // Copy to Clipboard
-writeSync(generatedPassword);
+if (copy) { 
+    writeSync(generatedPassword);
+    log(green("Password Copied to Clipboard 💾"));
+}
 
 // Save Password
 if (save) savePassword(generatedPassword);
-
-log(`${cyan("Password:")} ${bold(generatedPassword)}`);
-log(green("Password Copied to Clipboard 💾"));
