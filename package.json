@@ -1,6 +1,6 @@
 {
 	"name": "mkpassgen",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "NodeJS Password Generator",
 	"main": "index.js",
 	"preferGlobal": true,

@@ -1,19 +1,19 @@
 # passgen
 NodeJS Password Generator
 
-Installing:
+# Install
 ```
 npm i mkpassgen
 ```
-
-Running mkpassgen:
-> npx mkpassgen
+# Usage
+#### Run mkpassgen:
+`npx mkpassgen`
 
 #### For help you can use
-> npx mkpassgen -h
+`npx mkpassgen -h`
 
 #### You can change default password length
-> npx mkpassgen -l 10
+`npx mkpassgen -l 10`
 
 _or_
 npx mkpassgen --length=10
@@ -29,3 +29,6 @@ Options:
   -ns, --no-symbols      No Symbols are Included
   -h, --help             display help for command
 ```
+
+# License
+mkpassgen is released under the MIT license.
