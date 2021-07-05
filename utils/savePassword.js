@@ -1,5 +1,5 @@
 const { open, write, close } = require("fs");
-const { join,  } = require("path");
+const { join } = require("path");
 const { EOL } = require("os");
 const { italic, bold, underline, blue, greenBright } = require("chalk");
 
