@@ -7,16 +7,22 @@ npm i mkpassgen
 ```
 # Usage
 #### Run mkpassgen:
-`npx mkpassgen`
+```
+npx mkpassgen
+```
 
 #### For help you can use
-`npx mkpassgen -h`
+```
+npx mkpassgen -h
+```
 
 #### You can change default password length
-`npx mkpassgen -l 10`
+```
+npx mkpassgen -l 10
+```
 
 _or_
-npx mkpassgen --length=10
+`npx mkpassgen --length=10`
 
 ```
 Options:

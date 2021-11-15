@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const program = require("commander");
+const { Command } = require("commander");
 const { cyan, bold, green } = require("chalk");
 const { writeSync } = require("clipboardy");
 const createPassword = require("./utils/createPassword");
@@ -7,7 +7,7 @@ const savePassword = require("./utils/savePassword");
 const deletePassword = require("./utils/deletePassword");
 const { log } = console;
 
-program.version("1.0.0").description("NodeJS Password Generator");
+const program = new Command().version("1.0.2").description("NodeJS Password Generator");
 program
     .option("-l, --length <length>", "Length of Password", "8")
     .option("-s, --save", "Save Password to passwords.txt")
